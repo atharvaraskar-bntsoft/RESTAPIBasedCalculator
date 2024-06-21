@@ -13,11 +13,8 @@ import lombok.ToString;
 @ToString
 
 public class SuccessResponse {
-<<<<<<< HEAD
+
     double answer;
-=======
-    int answer;
->>>>>>> b7d277dd4f749449190bdfd4cb7924aef94d507e
     String detail;
     
 }
