@@ -32,7 +32,7 @@ public class CalculatorController {
 
        
          @GetMapping("/subtraction")
-          ResponseEntity<Object> Substraction(@RequestParam int number1, @RequestParam int number2){
+          ResponseEntity<Object> Substraction(@RequestParam double number1, @RequestParam double number2){
             double result=calculatorService.calculatorSubstraction(number1, number2);
             String detail= number1+"-"+number2+"="+result;
             SuccessResponse successResponse=new SuccessResponse(result,detail);
@@ -40,7 +40,7 @@ public class CalculatorController {
        }
 
        @GetMapping("/multiplication")
-       ResponseEntity<Object> Multiplication(@RequestParam int number1, @RequestParam int number2){
+       ResponseEntity<Object> Multiplication(@RequestParam double number1, @RequestParam double number2){
          double result=calculatorService.calculatorMultiplication(number1, number2);
          String detail= number1+"*"+number2+"="+result;
          SuccessResponse successResponse=new SuccessResponse(result,detail);
@@ -49,7 +49,7 @@ public class CalculatorController {
 
 
     @GetMapping("/division")
-       ResponseEntity<Object> Division(@RequestParam int number1, @RequestParam int number2){
+       ResponseEntity<Object> Division(@RequestParam double number1, @RequestParam double number2){
          double result=calculatorService.calculatorDivision(number1, number2);
          String detail= number1+"/"+number2+"="+result;
          SuccessResponse successResponse=new SuccessResponse(result,detail);
