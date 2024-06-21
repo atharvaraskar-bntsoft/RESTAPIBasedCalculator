@@ -9,17 +9,12 @@ public class CalculatorServiceImpl implements CalculatorService {
     @Override
     public double calculatorAddition(double number1, double number2) {
         double result=number1+number2;
-    public int calculatorAddition(int number1, int number2) {
-        int result=number1+number2;
         return result;
     }
 
     @Override
     public double calculatorSubstraction(double number1, double number2) {
         double result=number1-number2;
-
-    public int calculatorSubstraction(int number1, int number2) {
-        int result=number1-number2;
         return result;
       
     }
@@ -27,8 +22,6 @@ public class CalculatorServiceImpl implements CalculatorService {
     @Override
     public double calculatorMultiplication(double number1, double number2) {
         double result=number1*number2;
-    public int calculatorMultiplication(int number1, int number2) {
-        int result=number1*number2;
          return result;
        
     }
@@ -36,24 +29,18 @@ public class CalculatorServiceImpl implements CalculatorService {
     @Override
     public double calculatorDivision(double number1, double number2) {
          double result=number1/number2;
-    public int calculatorDivision(int number1, int number2) {
-        int result=number1/number2;
          return result;
     }
 
     @Override
     public double calculatorSquare(double number1) {
         double result=number1*number1;
-    public int calculatorSquare(int number1) {
-        int result=number1*number1;
          return result;       
     }
 
     @Override
     public double calculatorSquareroot(double number1) {
         double  result=Math.sqrt(number1);
-    public int calculatorSquareroot(int number1) {
-        int  result=(int)Math.sqrt(number1);
         return result;       
      
     }
